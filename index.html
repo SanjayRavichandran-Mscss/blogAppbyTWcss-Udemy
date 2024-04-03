@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screen: {
+            xs: "400px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+        },
+      };
+    </script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik+Scribble&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+span{
+    font-family: "Rubik Scribble", system-ui; 
+  }
+  li{
+    font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  }
+  body{
+    font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  }
+  #san{
+    font-family: "Licorice", cursive;
+  font-weight: 100;
+  }
+  </style>
+   <!-- Below Link for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between px-3 bg-blue-950 h-[70px] items-center text-white">
+      <div class="text-lg font-bold"><span class="text-sky-400">SAN</span>App</div>
+      <ul class="menu flex justify-end items-center gap-4">
+        <li class="hover:border-b-2 border-orange-700">Home</li>
+        <li  class="hover:border-b-2 border-orange-700">About</li>
+        <li  class="hover:border-b-2 border-orange-700">Services</li>
+        <li  class="hover:border-b-2 border-orange-700">Contact</li>
+      </ul>
+    </header>
+    <div class="contain flex w-[100%] md:w-[80%] mx-auto justify-between items-center flex-col md:flex-row my-[100px] gap-[50px] bg-slate-200 border rounded-xl p-8">
+        <div class="container_body md:w-[60%] w-[80%] ">
+            <h2 class="text-3xl font-bold">Its Heading</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cum omnis culpa eligendi excepturi laudantium recusandae saepe molestiae labore! Hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab est totam dignissimos aliquid veniam autem quo veritatis illum non laudantium ipsa fugit corrupti doloribus libero, deleniti, sequi voluptatum .</p>
+          </div>
+        <img class="w-[300px] h-[220px] rounded-md m-6" src="IMAGES/0.jpg" alt="">
+    </div>
+
+    <!-- Content -->
+    <div class="cards flex flex-wrap w-[90%] md:w-[80%] mx-auto gap-10 justify-center">
+<div class="card_body shadow-2xl my-[15px] md:w-[30%] w-[300px] p-5 ">
+  <img class="rounded-md" src="IMAGES/1.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+<p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis dignissimos magnam illum laudantium vero dicta aspernatur corrupti ad quisquam?</p>
+</div>
+<div class="card_body shadow-2xl my-[15px]  md:w-[30%] w-[300px] p-5">
+  <img class="rounded-md" src="IMAGES/2.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+  <p class = "text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repudiandae? Suscipit dolorum expedita magnam illum quasi, vero omnis autem maxime?</p>
+</div>
+<div class="card_body shadow-2xl my-[15px]  md:w-[30%] w-[300px] p-5">
+  <img class="rounded-md" src="IMAGES/3.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+<p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis dignissimos magnam illum laudantium vero dicta aspernatur corrupti ad quisquam?</p>
+</div>
+<div class="card_body shadow-2xl my-[15px]  md:w-[30%] w-[300px] p-5">
+  <img class="rounded-md" src="IMAGES/4.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+<p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis dignissimos magnam illum laudantium vero dicta aspernatur corrupti ad quisquam?</p>
+</div>
+<div class="card_body shadow-2xl my-[15px]  md:w-[30%] w-[300px] p-5">
+  <img class="rounded-md" src="IMAGES/5.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+<p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis dignissimos magnam illum laudantium vero dicta aspernatur corrupti ad quisquam?</p>
+</div>
+<div class="card_body shadow-2xl my-[15px]  md:w-[30%] w-[300px] p-5">
+  <img class="rounded-md" src="IMAGES/6.jpg" alt="">
+  <h4 class="font-bold text-2xl my-[15px] flex flex-col items-center">Card heading</h4>
+<p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis dignissimos magnam illum laudantium vero dicta aspernatur corrupti ad quisquam?</p>
+</div>
+  <!-- footer -->
+  <footer class="text-center my-[50px] text-xl  text-blue-950">
+     <a href="https://www.linkedin.com/in/sanjay-ravichandran-7a8349279" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/SanjayRavichandran-Mscss" target="_blank">  <i class="fa-brands fa-github"></i></a>
+       <a href="https://www.linkedin.com/in/sanjay-ravichandran-7a8349279" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+       <a href="https://www.linkedin.com/in/sanjay-ravichandran-7a8349279" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/sanjay-ravichandran-7a8349279" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+       <a href="https://www.linkedin.com/in/sanjay-ravichandran-7a8349279" target="_blank"> <p class="text-2xl font-semibold">@All Rights Reserved</p>
+        <p id="san">by Sanjay Ravichandran</p>
+    </footer>
+  </body>
+</html>
